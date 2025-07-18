@@ -1,4 +1,259 @@
 # Polynome
+## Repetition Terme und Variabeln
+Wir erinnern uns an folgende Definitionen
 
-In Arbeit...
+::: {.callout-caution title="Definition: Variable" icon=false}
+Eine Variable ist ein Platzhalter für eine Zahl. Meist werden Buchstaben, wie a,b,c,...,x,y,z oder $\alpha$, $\beta$, $\gamma$.. etc. verwendet. Man kann aber auch verschiedene Formen als Variabeln verwenden.
+:::
+
+::: {.callout-caution title="Definition: Term" icon=false}
+Ein Term ist eine sinnvolle Abfolge mathematischer Zeichen (Zahlen, Variabeln, Klammern und Operationszeichen), aber ohne Gleichheitszeichen.
+:::
+
+* Zwischen zwei Variabeln oder einer Zahl und einer Variabeln darf man den Multiplikationspunkt weg lassen ($2\cdot a$ ist dasselbe wie $2a$)
+* Stehen mehrere Variabeln in einem Produkt, so werden diese alphabetisch geordnet.
+  * Steht zusätzlich eine Zahl im Produkt (diese Zahl nennt man Koeffizient), steht diese an erster Stelle.
+  * Beträgt der Koeffizient $1$ oder $-1$, wird er nicht geschrieben
+
+**Beispiele:**
+
+* Ein einfacher Term ist die Abfolge $1+4$. Wir können nun statt Zahlen auch Variablen verwenden, z.B. $a+ b$.
+* Kompliziertere Terme können neben Zahlen oder Variablen und einem Operationszeichen auch
+mehrere Operationszeichen und Klammern enthalten: $3\cdot (a−b) + 15 : 3−c$
+* $5x= 7$ und $4ac)−5ac(+d3$ sind keine Terme
+
+
+### Terme umformen und vereinfachen
+
+::: {.callout-caution title="Rechengesetze Termumformung" icon=false}
+**Kommutativgesetz (KG) der Addition und Multiplikation**
+
+'Vertauschungsgesetz': Die Reihenfolge der Summanden bei der Addition oder Faktoren bei der Multiplikation dürfen frei vertauscht werden. Nicht aber bei einer Subtraktion oder Division!
+$$
+a+b = b+a
+$$
+
+$$
+a\cdot b = b\cdot a
+$$
+
+---
+
+**Assoziativgeset (AG) der Addition und Multiplikation**
+
+'Verknüpfungsgesetz': Die Art der Klammerung bei Additionen und Multiplikationen hat keinen Einfluss auf das Ergebnis. Nicht aber bei einer Subtraktion und Division!
+
+$$
+a+(b+c) = (a+b)+c =  a+b+c
+$$
+
+$$
+a\cdot (b\cdot c) = (a\cdot b)\cdot c= a\cdot b\cdot c
+$$
+
+---
+
+**Klammern bei Multiplikation / Division**
+
+Es wird jeweils nur ein Faktor in der Klammer mit dem zweiten Faktor multipliziert / dividiert.
+
+$$
+(5b)\cdot 3 = 5\cdot b\cdot 3 = 15b \text{nicht: } 15\cdot 3b
+$$
+
+$$
+(14c) : 7 = \frac{14c}{7} = \frac{2c}{1} = 2c \text{nicht: } \frac{14}{7}\cdot \frac{c}{7}
+$$
+
+
+:::
+
+
+Zwei Terme $T_1$ und $T_2$ heissen äquivalent, wenn alle möglichen Einsetzungen für die Variabeln bei $T_1$ und $T_2$ den selben Wert ergeben, so dass gilt: $T_1 = T_2$
+
+Einen Term umformen bedeutet, man ersetzt ihn durch einen äquivalenten Term.
+
+
+**Regeln: **
+
+
+* Gleiche Variabeln dürfen zusammengefasst werden
+$$
+3v + 7v = (3+7)v = 10v
+$$
+
+* Verschiedene Variabeln oder Variabeln und Zahlen dürfen **NIE** zusammengefasst werden
+$$
+5x + 2y -3x + 6y = 2x + 8y
+$$
+
+$$
+2-4x-9+8x = 4x-7
+$$
+
+* Multiplikationen mit gleicher Variable als Faktor können zu einer Potenz zusammengefasst werden
+$$
+a\cdot a\cdot b\cdot a\cdot b\cdot a = a^4 b^2
+$$
+
+* Verschiedene Potenzen der selben Variable dürfen **NIE** zusammengefasst werden
+$$
+3x^2 + 5x^4 - 2x^2 + x^4 = x^2 + 9x^4
+$$
+
+### Hierarchie der Operationen
+Die Hierarchie der mathematischen Operationen ist vorgegeben:
+
+**Kla**mmer vor **Po**tenz vor **Pu**nktoperationen vor **Stri**choperationen
+
+Merkhilfe: KlaPoPuStri
+
+![](images/1_klapopustri.jpg)
+
+
+::: {.callout-tip title="Beispiel" collapse="true"}
+Werte den folgendnen Term aus
+
+$$
+a(b+cd^e)
+$$
+für $a=6, b=5, c=4, d=3, e=2$
+:::
+
+
+::: {.callout-note title="Bemerkung"}
+$$
+-x^2\neq (-x)^2
+$$
+
+* mit $-x^2$ wird nur die Variable $x$ quadriert
+* mit $(-x)^2$ wird die Variable und das negative Vorzeichen quadriert
+:::
+
+
+### Summe oder Produkt
+Bevor wir eine spezielle Gruppe von Termen betrachten, - die Polynome - müssen wir aber den Unterschied zwischen einer Summe und einem Produkt etwas genauer anschauen. Die zuletzt ausgeführte Operation entscheided, um welchen Term es sich handelt.
+
+**Beispiele für Summen**
+
+* $x+y$
+* $5a + b$
+* $3b^2 - 2ab$
+
+
+**Beispiele für Produkte**
+
+* $xy$
+* $5(a+b)$
+* $(b^2-a):2$
+
+
+::: {.callout-note title="Bemerkung"}
+Dir ist vieleicht aufgefallen, dass $3b^2 - 2ab$ als "Summe" aufgelistet wurde, obwohl es sich um eine Differenz handelt?
+
+Man kann jede Differenz als eine Summe mit negativen Vorzeichen betrachten. So wird die negative Gegenzahl addiert, statt der positiven Subtrahiert:
+
+$5-3$ ist dasselbe wie $5+ (-3)$
+
+
+Ebenfalls wurde $(b^2-a):2$ als "Produkt" eingeordnet, statt als "Quotient". Eine Division mit einer Zahl ist dasselbe wie eine Multiplikation mit dem Kehrwert der selben Zahl:
+
+$4:2$ ist dasselbe wie $4 \cdot \frac{1}{2}$
+:::
+
+::: {.callout-tip title="Beispiele für Summen" collapse="true"}
+Werte den folgendnen Term aus
+
+$$
+a(b+cd^e)
+$$
+für $a=6, b=5, c=4, d=3, e=2$
+:::
+
+### Aufgabe
+Entscheide für jeden Term, ob es sich um ein Produkt oder eine Summe handelt:
+
+  a) $a\cdot 2b + c$
+  b) $a\cdot (2b + c)$
+  c) $ab + bc$
+  d) $a(b+bc)$
+  e) $(b+bc) : 2$
+  f) $(a+b)(a-b+c)$
+  g) $(a+b)(a-b)+c$
+  h) $((a+bc+1)\cdot 2 + c) \cdot 3$
+  i) $(a+b)(a+2b)-4(2b-a)$
+
+
+
+## Monome
+::: {.callout-caution title="Definition Monom" icon=false}
+Ein *Monom* ist ein Produkt verschiedener (oder gleicher) Variabeln und ganzzahliger Zahlen mit nicht-negativen Exponenten.
+
+Es darf keine Addition, Subtraktion, Wurzeln oder Division durch Variabeln enthalten
+:::
+
+Schauen wir uns folgende Beisiele an:
+
+**Beispiele für Monome**
+
+* $ab$
+* $5a^2$
+* $-3x^5z^2$
+
+***Keine* Beispiele für Monome**
+
+* $a-b$
+* $2\sqrt{a}$
+* $-\frac{2x}{5yz}$
+
+
+::: {.callout-caution title="Definition Monom - Koeffizient" icon=false}
+Besteht ein Monom aus einer Zahl und einer Variable, so nennt man die Zahl vor den Variabeln den *Koeffizienten* des Monoms.
+:::
+
+**Beispiele:**
+
+* $2a$: Der Koeffizient ist die Zahl $2$
+* $-7b^2d$: Der Koeffizient ist die Zahl $-7$
+* $\frac{3}{5} xyz$: Der Koeffizient ist die Zahl $\frac{3}{5}$
+
+
+::: {.callout-caution title="Definition Monom - gleichartige Monome" icon=false}
+Bestehen Monome aus dem selben Produkt von Variabeln (möglicherweise in unterschiedlicher Reihenfolge), nennt man *gleichartige Monome*.
+
+Die Koeffizienten können unterschiedliche Werte haben.
+
+Besitzen gleichartige Monome die gleichen Koeffizienten, werden diese Terme als *gleiche Monome* bezeichnet.
+:::
+
+**Beispiele für gleiche Monome**
+
+* $2xyx$ und $2x^2y$
+* $-7abc^2$ und $-7ac^2b$
+* $\frac{3}{4}mnp$ und $\frac{3}{4}pnm$
+
+
+**Beispiele für gleichartige Monome**
+
+* $5$ und $-3$
+* $-5acx$ und $\frac{1}{2}xac$
+* $n(-3)azn$ und $-3an^2 z$
+
+
+**Beispiele für nicht gleichartige Monome**
+
+* $x$ und $y$
+* $3abcd$ und $-\frac{1}{5}abc$
+* $a^2b$ und $ab^2$
+* $5cdcc$ und $5c^2d^2$
+
+
+## Polynome
+Addiert man Monome, ist das Resultat meist kein Monom mehr. Diesen, durch addieren von Monomen neu entstandenen Monomen nennen wir *Polynom*.
+
+::: {.callout-caution title="Definition Polynom" icon=false}
+Ein *Polynom* ist eine Summe von einem oder mehreren Monomen
+:::
+
+Somit ist jedes Monom auch ein Polynom. Aber nicht jedes Polynom ist ein Monom!
 

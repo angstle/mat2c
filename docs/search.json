@@ -324,7 +324,7 @@
     "href": "3_flaechen.html",
     "title": "3  Flächen",
     "section": "",
-    "text": "(Ev. Pythagoras)",
+    "text": "In Arbeit…",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Flächen</span>"
     ]
@@ -334,7 +334,7 @@
     "href": "4_gleichungen.html",
     "title": "4  Gleichungen",
     "section": "",
-    "text": "Ev. mit Parametergleichungen",
+    "text": "In Arbeit…",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Gleichungen</span>"
     ]
@@ -344,7 +344,7 @@
     "href": "7_kreis.html",
     "title": "7  Kreis",
     "section": "",
-    "text": "Pizza\n\n\nPizza",
+    "text": "In Arbeit…",
     "crumbs": [
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Kreis</span>"
     ]
@@ -397,6 +397,36 @@
     "text": "1.3 Polynome\nAddiert man Monome, ist das Resultat meist kein Monom mehr. Diesen, durch addieren von Monomen neu entstandenen Monomen nennen wir Polynom.\n\n\n\n\n\n\nDefinition Polynom\n\n\n\nEin Polynom ist eine Summe von einem oder mehreren Monomen\n\n\nSomit ist jedes Monom auch ein Polynom. Aber nicht jedes Polynom ist ein Monom!",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Polynome</span>"
+    ]
+  },
+  {
+    "objectID": "2_wurzeln.html",
+    "href": "2_wurzeln.html",
+    "title": "2  Wurzeln",
+    "section": "",
+    "text": "In Arbeit…",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Wurzeln</span>"
+    ]
+  },
+  {
+    "objectID": "5_faktorzerlegung.html",
+    "href": "5_faktorzerlegung.html",
+    "title": "5  Faktorzerlegung",
+    "section": "",
+    "text": "In Arbeit…",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Faktorzerlegung</span>"
+    ]
+  },
+  {
+    "objectID": "6_pythagoras.html",
+    "href": "6_pythagoras.html",
+    "title": "6  Pythagoras",
+    "section": "",
+    "text": "In Arbeit…",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Pythagoras</span>"
     ]
   }
 ]
