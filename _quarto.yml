@@ -6,24 +6,22 @@ book:
   title: "Skript Mathematik 2c"
   author: "Levin Angst"
   date: today
-  favicon: logo2.jpg
+  favicon: favicon.png
   description: Dieses Buch umfasst den Unterrichtsstoff für das Jahr 2025/26
   keyword: "test, unterricht"
-  url: "https://gitlab.uzh.ch/levinrogerangst/test_quarto/"
+  url: "https://angstle.github.io/mat2c/"
   page-navigation: true
   sidebar:
-    logo: logo2.jpg
+    logo: logo_2.png
     search: true
-  repo-url: https://gitlab.uzh.ch/levinrogerangst/test_quarto/
   repo-subdir: book
   repo-branch: main
-  repo-actions: [edit, issue, source]
-  sharing: [twitter, linkedin]
-  image: logo2.jpg
+  image: logo_2.png
 
   chapters:
     - index.qmd
     - 1_polynome.qmd
+    - 1_1_aufgaben_polynome.qmd
     - 2_wurzeln.qmd
     - 3_flaechen.qmd
     - 4_gleichungen.qmd

@@ -8,7 +8,7 @@
 
 <meta name="description" content="Dieses Buch umfasst den Unterrichtsstoff für das Jahr 2025/26">
 
-<title>3&nbsp; Wurzeln – Skript Mathematik 2c</title>
+<title>2&nbsp; Übungsaufgaben Polynome – Skript Mathematik 2c</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./3_flaechen.html" rel="next">
-<link href="./1_1_aufgaben_polynome.html" rel="prev">
+<link href="./2_wurzeln.html" rel="next">
+<link href="./1_polynome.html" rel="prev">
 <link href="./favicon.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -73,6 +73,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="custom.css">
 </head>
@@ -86,7 +115,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./2_wurzeln.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Wurzeln</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./1_1_aufgaben_polynome.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Übungsaufgaben Polynome</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -131,13 +160,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./1_1_aufgaben_polynome.html" class="sidebar-item-text sidebar-link">
+  <a href="./1_1_aufgaben_polynome.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Übungsaufgaben Polynome</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./2_wurzeln.html" class="sidebar-item-text sidebar-link active">
+  <a href="./2_wurzeln.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Wurzeln</span></span></a>
   </div>
 </li>
@@ -176,15 +205,21 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#sec-terme_und_variabeln" id="toc-sec-terme_und_variabeln" class="nav-link active" data-scroll-target="#sec-terme_und_variabeln"><span class="header-section-number">2.1</span> Terme und Variabeln</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Wurzeln</span></h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Übungsaufgaben Polynome</span></h1>
 </div>
 
 
@@ -201,9 +236,39 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>In Arbeit…</p>
+<section id="sec-terme_und_variabeln" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="sec-terme_und_variabeln"><span class="header-section-number">2.1</span> Terme und Variabeln</h2>
+<p>Entscheide für jeden Term, ob es sich um ein Produkt oder eine Summe handelt:</p>
+<ol type="a">
+<li><span class="math inline">\(a\cdot 2b + c\)</span></li>
+<li><span class="math inline">\(a\cdot (2b + c)\)</span></li>
+<li><span class="math inline">\(ab + bc\)</span></li>
+<li><span class="math inline">\(a(b+bc)\)</span></li>
+<li><span class="math inline">\((b+bc) : 2\)</span></li>
+<li><span class="math inline">\((a+b)(a-b+c)\)</span></li>
+<li><span class="math inline">\((a+b)(a-b)+c\)</span></li>
+<li><span class="math inline">\(((a+bc+1)\cdot 2 + c) \cdot 3\)</span></li>
+<li><span class="math inline">\((a+b)(a+2b)-4(2b-a)\)</span></li>
+</ol>
+<div class="callout callout-style-default callout-important callout-titled" title="Lösung">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>TBD</p>
+</div>
+</div>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -769,13 +834,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./1_1_aufgaben_polynome.html" class="pagination-link" aria-label="Übungsaufgaben Polynome">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Übungsaufgaben Polynome</span></span>
+      <a href="./1_polynome.html" class="pagination-link" aria-label="Polynome">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Polynome</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./3_flaechen.html" class="pagination-link" aria-label="Flächen">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Flächen</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./2_wurzeln.html" class="pagination-link" aria-label="Wurzeln">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Wurzeln</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
