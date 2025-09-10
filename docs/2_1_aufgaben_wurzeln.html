@@ -8,7 +8,7 @@
 
 <meta name="description" content="Dieses Buch umfasst den Unterrichtsstoff für das Jahr 2025/26">
 
-<title>TI30x Pro Taschenrechner</title>
+<title>4&nbsp; Übungsaufgaben Wurzeln</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./1_polynome.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./2_wurzeln.html" rel="prev">
 <link href="./favicon.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -115,7 +114,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./0_Taschenrechner.html">TI30x Pro Taschenrechner</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./2_1_aufgaben_wurzeln.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Übungsaufgaben Wurzeln</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -151,7 +150,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./0_Taschenrechner.html" class="sidebar-item-text sidebar-link active">
+  <a href="./0_Taschenrechner.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">TI30x Pro Taschenrechner</span></a>
   </div>
 </li>
@@ -175,8 +174,8 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./2_1_aufgaben_wurzeln.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Übungsaufgaben Polynome</span></span></a>
+  <a href="./2_1_aufgaben_wurzeln.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Übungsaufgaben Wurzeln</span></span></a>
   </div>
 </li>
     </ul>
@@ -189,9 +188,16 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#hilfsmittel-in-der-mathematik" id="toc-hilfsmittel-in-der-mathematik" class="nav-link active" data-scroll-target="#hilfsmittel-in-der-mathematik">Hilfsmittel in der Mathematik</a></li>
-  <li><a href="#grundlegende-funktionen" id="toc-grundlegende-funktionen" class="nav-link" data-scroll-target="#grundlegende-funktionen">Grundlegende Funktionen</a></li>
-  <li><a href="#aufgaben" id="toc-aufgaben" class="nav-link" data-scroll-target="#aufgaben">Aufgaben</a></li>
+  <li><a href="#sec-wurzeln_intro" id="toc-sec-wurzeln_intro" class="nav-link active" data-scroll-target="#sec-wurzeln_intro"><span class="header-section-number">4.1</span> Einführung</a></li>
+  <li><a href="#sec-wurzeln_heron" id="toc-sec-wurzeln_heron" class="nav-link" data-scroll-target="#sec-wurzeln_heron"><span class="header-section-number">4.2</span> Heron-Verfahren</a></li>
+  <li><a href="#sec-wurzeln_reell" id="toc-sec-wurzeln_reell" class="nav-link" data-scroll-target="#sec-wurzeln_reell"><span class="header-section-number">4.3</span> Reelle Zahlen</a></li>
+  <li><a href="#rechnen-mit-wurzeln" id="toc-rechnen-mit-wurzeln" class="nav-link" data-scroll-target="#rechnen-mit-wurzeln"><span class="header-section-number">4.4</span> Rechnen mit Wurzeln</a>
+  <ul class="collapse">
+  <li><a href="#sec-wurzeln_rechnen_multi_div" id="toc-sec-wurzeln_rechnen_multi_div" class="nav-link" data-scroll-target="#sec-wurzeln_rechnen_multi_div"><span class="header-section-number">4.4.1</span> Multiplikation und Division</a></li>
+  <li><a href="#sec-wurzeln_rechnen_potenzen" id="toc-sec-wurzeln_rechnen_potenzen" class="nav-link" data-scroll-target="#sec-wurzeln_rechnen_potenzen"><span class="header-section-number">4.4.2</span> Potenzen</a></li>
+  <li><a href="#sec-wurzeln_rechnen_gemischt" id="toc-sec-wurzeln_rechnen_gemischt" class="nav-link" data-scroll-target="#sec-wurzeln_rechnen_gemischt"><span class="header-section-number">4.4.3</span> Gemischte Aufgaben</a></li>
+  </ul></li>
+  <li><a href="#sec-wurzeln_normalform" id="toc-sec-wurzeln_normalform" class="nav-link" data-scroll-target="#sec-wurzeln_normalform"><span class="header-section-number">4.5</span> Normalform</a></li>
   </ul>
 </nav>
     </div>
@@ -200,7 +206,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">TI30x Pro Taschenrechner</h1>
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Übungsaufgaben Wurzeln</span></h1>
 </div>
 
 
@@ -217,335 +223,122 @@ window.Quarto = {
 </header>
 
 
-<p><img src="images/0_titel.png" class="img-fluid"></p>
-<section id="hilfsmittel-in-der-mathematik" class="level2">
-<h2 class="anchored" data-anchor-id="hilfsmittel-in-der-mathematik">Hilfsmittel in der Mathematik</h2>
-<p>Ein Taschenrechenr ist eine handliche elektronische Rechenhilfe, mit dem numerische Berechnungen ausgeführt werden können. Ein Taschenrechner ist nicht dazu da, um das mathematische Verständnis zu ersetzen. Es ist ein Hilfsmittel, welches genau das tut, was wir von ihm verlangen. Ohne ein Grundlegendes mathematisches Verständnis ist ein Taschenrechner (wie auch alle anderen Hilfsmittel, wie z.B. chatGPT) nicht viel Wert.</p>
-<p>Wir können den Taschenrechner als ein super bequemes Hilfsmittel verwenden, um zu kontrollieren oder mühsamere Berechnungen durchzuführen. Es ist leider aber unabdingbar, dass wir die Mathematik verstehen und auch grundlegend ohne Hilfsmittel rechnen können um abschätzen zu können ob das Ergebnis was vom Taschenrechner kommt überhaupt plausibel ist.</p>
-<p>Das selbe gilt übrigens auch für andere Hilfsmittel, wie zum Beispiel ChatGPT. ChatGPT wurde als Sprachmodell entwickelt, deren Hauptziel es nicht ist korrekte Antworten zu liefern, sondern möglichst authentisch die Menschliche Sprache zu immitieren. Besonders in Mathematischen Fragen zeigt sich das gerne. Die KI rechnet nicht, wenn man sie nach einer mathematischen Lösung fragt. Sie ermittelt aus den eingegebenen Zeichen die höchste Wahrscheinlichkeit für den optimalen Output. ChatGPT kann extrem gut authentisch und selbstsicher “sprechen”. Dass dabei plausibel klingender Blödsinn herauskommen kann liest man immer wieder in den Medien, kürzlich z.B. hier auf <a href="https://www.watson.ch/international/gesundheit/670654194-chatgpt-sprach-von-salzersatz-mann-durch-natriumbromid-vergiftet">Watson</a>.</p>
-<p>Die Erklärung der Entwickler zu ChatGPT ist folgende:</p>
-<div class="callout callout-style-default callout-note no-icon callout-titled" title="Was ist chatGPT?">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Was ist chatGPT?
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><em>Wir haben ein Modell namens ChatGPT trainiert, das wie in einem echten Gespräch mit dir interagiert. Dank des Dialogformats kann ChatGPT auf Rückfragen eingehen, eigene Fehler zugeben, falsche Annahmen hinterfragen und unangemessene Anfragen ablehnen.</em></p>
-<p>[…]</p>
-<p><em>Manchmal gibt ChatGPT plausibel klingende, aber falsche oder unsinnige Antworten.</em></p>
-<p>[…]</p>
-<p><em>Die heutige Veröffentlichung von ChatGPT dient zu Forschungszwecken und verkörpert den aktuellen Stand der schrittweisen Bereitstellung⁠⁠ zunehmend sicherer und nützlicher KI-Systeme durch OpenAI.</em></p>
-<p>Quelle: <a href="https://openai.com/de-DE/index/chatgpt/">openai.com</a></p>
-</div>
-</div>
-<p>Fazit: ChatGPT kann ein grossatiges Werkzeug sein, muss aber stets hinterfragt werden. Man darf den Aussagen nie blind vertrauen und benötigt entsprechend ein gewisses Grundwissen um es optimal anzuwenden.</p>
-<p>Das selbe gilt für den Taschenrechner. Der Taschenrechner weiss nicht, was ihr wollt. Er verarbeitet nur das was ihr eintippt. Ihr müsst stets wissen, was ihr erwartet und das Ergebnis kritisch hinterfragen. <em>Ist das das, was ich erwartet habe? Ergibt das Ergebnis tatsächlich Sinn?</em></p>
-</section>
-<section id="grundlegende-funktionen" class="level2">
-<h2 class="anchored" data-anchor-id="grundlegende-funktionen">Grundlegende Funktionen</h2>
-<p>Der Ti30x Pro wird euch durch das ganze Gymnasium und vermutlich auch weiter begleiten. Mit diesem Taschenrechner kann sehr viel mehr berechnet werden, als wir in diesem Jahr lernen werden. Also keine Angst, wenn euch noch viele Funktionen unbekannt sind.</p>
-<p><img src="images/0_ti30xpro.png" class="img-fluid"></p>
+<section id="sec-wurzeln_intro" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="sec-wurzeln_intro"><span class="header-section-number">4.1</span> Einführung</h2>
+<p>Rychenberg - Arithmetik und Algebra Kapitel 10.1 (Einführung)</p>
+<p>Seite 93, Aufgaben</p>
 <ul>
-<li>Der Taschenrechner lässt sich über die “ON” Taste unten links einschalten.</li>
-<li>Die Grundoperationen sind auf der rechten Seite: Dividieren, Multiplizieren, Subtrahieren und Addieren.</li>
-<li>Ein Vorzeichenwechsel kennzeichnet man mit der “(-)” Taste.</li>
-<li>Quadrieren kann man mit “<span class="math inline">\(x^2\)</span>”. Sonstige Potenzen fügt man mit “<span class="math inline">\(x^\square\)</span>” gefolgt von der gewünschten Potenz als Zahl ein.</li>
-<li>Weitere Funktionen sind in hellblauer Schrift gekennzeichnet. Um auf diese zugreifen zu können wird die blaue “2nd”-Taste gedrückt; jetzt sind die hellblauen Funktionen verfügbar.</li>
+<li>1</li>
+<li>3</li>
+<li>5</li>
+<li>7</li>
+<li>9</li>
+<li>11</li>
+<li>13 (Zusatz)</li>
 </ul>
-<div class="callout callout-style-default callout-tip callout-titled" title="Demo">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Demo
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Wir schauen uns nun noch folgendes an:</p>
-<ul>
-<li>Wie kann man Werte speichern? (sto <span class="math inline">\(\rightarrow\)</span>)</li>
-<li>Wie kann man einfache operationen speichern für den schnellen Abruf? (<span class="math inline">\(set op\)</span> und <span class="math inline">\(op\)</span>)</li>
-</ul>
-</div>
-</div>
 </section>
-<section id="aufgaben" class="level2">
-<h2 class="anchored" data-anchor-id="aufgaben">Aufgaben</h2>
-<p>Probiere folgende Aufgaben möglichst elegant mit dem Taschenrechner zu lösen.</p>
+<section id="sec-wurzeln_heron" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="sec-wurzeln_heron"><span class="header-section-number">4.2</span> Heron-Verfahren</h2>
 <ol type="1">
-<li>Beherrscht dein Taschenrechner die Operationshierarchie (Bsp. Punkt vor Strich)? Berechne sowohl von Hand als auch mit dem Taschenrechner und vergleiche deine Ergebnisse: <span class="math display">\[5\cdot 4 + 6 / 2 - 2\]</span></li>
+<li>Bestimme <span class="math inline">\(\sqrt{130}\)</span> mit dem Heron-Verfahren auf 3 Nachkommastellen genau.</li>
 </ol>
 <hr>
 <ol start="2" type="1">
-<li>In Wil ZH steht eine grosse Kiesgrube. Der Betreiber möchte nun zwei neue Gruben ausheben. Die erste Grube misst <span class="math inline">\(351m\cdot 223m\)</span>, die zweite <span class="math inline">\(347m \cdot 619m\)</span>.
-<ol type="a">
-<li>Wie viel Kubikmeter <span class="math inline">\((m^3)\)</span> Kies muss der Betreiber aus jeder der beiden Gruben fördern, wenn diese jeweils <span class="math inline">\(99m\)</span> tief werden?</li>
-<li>Und wie viel für eine Tiefe von <span class="math inline">\(114m\)</span>?</li>
-<li>Wie gross ist die Differenz der beiden Gruben in <span class="math inline">\(m^3\)</span> bei einer geplanten Tiefe von <span class="math inline">\(100m\)</span>?</li>
-</ol></li>
+<li>Bestimme <span class="math inline">\(\sqrt{90}\)</span> mit dem Heron-Verfahren mit 4 Iterationen.</li>
 </ol>
-<div class="callout callout-style-default callout-important callout-titled" title="Lösung">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Lösung
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ol type="a">
-<li><ul>
-<li>Grube 1: <span class="math inline">\(7'749'027 m^3\)</span></li>
-<li>Grube 2: <span class="math inline">\(21'264'507 m^3\)</span></li>
-</ul></li>
-<li><ul>
-<li>Grube 1: <span class="math inline">\(8'923'122 m^3\)</span></li>
-<li>Grube 2: <span class="math inline">\(24'486'402 m^3\)</span></li>
-</ul></li>
-<li><span class="math inline">\(13'652'000 m^3\)</span></li>
-</ol>
-</div>
-</div>
-</div>
-<hr>
-<ol start="3" type="1">
-<li>Berechne die folgenden Terme:
-<ol type="a">
-<li><span class="math inline">\(17^3\)</span></li>
-<li><span class="math inline">\(2^{12}\)</span></li>
-<li><span class="math inline">\(2^{2^{2^2}}\)</span></li>
-<li><span class="math inline">\(((2^2)^2)^2\)</span></li>
-<li><span class="math inline">\(81^{\frac{1}{2}}\)</span></li>
-</ol></li>
-</ol>
-<div class="callout callout-style-default callout-important callout-titled" title="Lösung">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Lösung
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ol type="a">
-<li><span class="math inline">\(4913\)</span></li>
-<li><span class="math inline">\(4096\)</span></li>
-<li><span class="math inline">\(65536\)</span></li>
-<li><span class="math inline">\(256\)</span></li>
-<li><span class="math inline">\(9\)</span></li>
-</ol>
-</div>
-</div>
-</div>
-<hr>
-<ol start="4" type="1">
-<li>Berechne jeweils und gib das Resultat als Bruch und als Dezimalzahl (gerundet auf 2 Nachkommastellen) an:
-<ol type="a">
-<li><span class="math inline">\(\frac{7}{8} + \frac{5}{6}\)</span></li>
-<li><span class="math inline">\(\frac{13}{20} \cdot \frac{15}{39}\)</span></li>
-<li><span class="math inline">\(3 \div \frac{2}{5}\)</span></li>
-</ol></li>
-</ol>
-<div class="callout callout-style-default callout-important callout-titled" title="Lösung">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Lösung
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ol type="a">
-<li><span class="math inline">\(1.71\)</span> oder <span class="math inline">\(\frac{41}{24}\)</span></li>
-<li><span class="math inline">\(0.25\)</span> oder <span class="math inline">\(\frac{1}{4}\)</span></li>
-<li><span class="math inline">\(7.5\)</span> oder <span class="math inline">\(\frac{15}{2}\)</span></li>
-</ol>
-</div>
-</div>
-</div>
-<hr>
-<ol start="5" type="1">
-<li>Berechne die folgenden Terme:
-<ol type="a">
-<li><span class="math inline">\((-12) + 7\)</span></li>
-<li><span class="math inline">\((-5)^2\)</span></li>
-<li><span class="math inline">\((-5^2)\)</span></li>
-<li><span class="math inline">\(\frac{-42}{7}\)</span></li>
-</ol></li>
-</ol>
-<div class="callout callout-style-default callout-important callout-titled" title="Lösung">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Lösung
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ol type="a">
-<li><span class="math inline">\(-5\)</span></li>
-<li><span class="math inline">\(25\)</span></li>
-<li><span class="math inline">\(-25\)</span></li>
-<li><span class="math inline">\(-6\)</span></li>
-</ol>
-</div>
-</div>
-</div>
-<hr>
-<ol start="6" type="1">
-<li>Ein neues Freibad soll gebaut werden. Das Schwimmbecken ist <span class="math inline">\(51\)</span> m lang und <span class="math inline">\(27\)</span> m breit.
-<ol type="a">
-<li>Wie groß ist die Fläche des Wasserspiegels in <span class="math inline">\(m^2\)</span>?</li>
-<li>Wenn das Becken im Schnitt <span class="math inline">\(2.5\)</span> m tief ist – wie viele <span class="math inline">\(m^3\)</span> Wasser passen hinein?</li>
-<li>Ein Kubikmeter Wasser kostet <span class="math inline">\(1.80\)</span> Franken. Wie teuer ist es, das Becken einmal ganz zu füllen?</li>
-</ol></li>
-</ol>
-<div class="callout callout-style-default callout-important callout-titled" title="Lösung">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Lösung
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-7" class="callout-7-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ol type="a">
-<li><span class="math inline">\(1377 m^2\)</span></li>
-<li><span class="math inline">\(3442.5 m^3\)</span></li>
-<li>CHF <span class="math inline">\(6196.5\)</span></li>
-</ol>
-</div>
-</div>
-</div>
-<hr>
-<ol start="7" type="1">
-<li>Du kaufst in der Migros folgende Artikel:
+</section>
+<section id="sec-wurzeln_reell" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="sec-wurzeln_reell"><span class="header-section-number">4.3</span> Reelle Zahlen</h2>
+<p>Rychenberg - Arithmetik und Algebra Kapitel 10.2 (Irrationale Wurzelwerte)</p>
+<p>Seite 93, Aufgaben</p>
 <ul>
-<li>3 Packungen Äpfel zu je <span class="math inline">\(4.80\)</span> Franken</li>
-<li>2 Liter Milch zu je <span class="math inline">\(1.55\)</span> Franken</li>
-<li>5 Tafeln Schokolade zu je <span class="math inline">\(2.20\)</span> Franken</li>
+<li>15</li>
 </ul>
-<ol type="a">
-<li>Wie viel kostet der gesamte Einkauf?</li>
-<li>Du bezahlst mit einer 100er Note. Wie viel Rückgeld gibt es?</li>
-</ol></li>
-</ol>
-<div class="callout callout-style-default callout-important callout-titled" title="Lösung">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Lösung
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-8" class="callout-8-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ol type="a">
-<li>CHF <span class="math inline">\(28.5\)</span></li>
-<li>CHF <span class="math inline">\(71.5\)</span></li>
-</ol>
-</div>
-</div>
-</div>
+</section>
+<section id="rechnen-mit-wurzeln" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="rechnen-mit-wurzeln"><span class="header-section-number">4.4</span> Rechnen mit Wurzeln</h2>
+<section id="sec-wurzeln_rechnen_multi_div" class="level3" data-number="4.4.1">
+<h3 data-number="4.4.1" class="anchored" data-anchor-id="sec-wurzeln_rechnen_multi_div"><span class="header-section-number">4.4.1</span> Multiplikation und Division</h3>
+<p>Rychenberg - Arithmetik und Algebra Kapitel 10.3 (Rechnen mit Quadratwurzeln)</p>
+<p>Seite 94, Aufgaben</p>
+<ul>
+<li>19</li>
+<li>21</li>
+</ul>
+</section>
+<section id="sec-wurzeln_rechnen_potenzen" class="level3" data-number="4.4.2">
+<h3 data-number="4.4.2" class="anchored" data-anchor-id="sec-wurzeln_rechnen_potenzen"><span class="header-section-number">4.4.2</span> Potenzen</h3>
+<p>Rychenberg - Arithmetik und Algebra Kapitel 10.3 (Rechnen mit Quadratwurzeln)</p>
+<p>Seite 94, Aufgaben</p>
+<ul>
+<li>17</li>
+</ul>
 <hr>
-<ol start="8" type="1">
-<li>Berechne die Terme zuerst von Hand, dann mit dem Taschenrechner, und überprüfe die Ergebnisse.</li>
+<ol type="1">
+<li>Berechne folgende Wurzeln:</li>
 </ol>
 <ol type="a">
-<li><span class="math inline">\(8 + 12 \cdot 3 - 4\)</span></li>
-<li><span class="math inline">\((15 - 5) \cdot 2 + 18 / 3\)</span></li>
-<li><span class="math inline">\(\frac{20}{5} + 6 \cdot (2 + 3)\)</span></li>
-<li><span class="math inline">\(3^{-4} \cdot 81 + 10\)</span></li>
+<li><span class="math inline">\(\sqrt{\frac{49}{64}}\)</span></li>
+<li><span class="math inline">\(\sqrt{(-66)^2}\)</span></li>
+<li><span class="math inline">\(\sqrt{4+100+121}\)</span></li>
+<li><span class="math inline">\(\sqrt{\frac{12}{25}}\)</span></li>
 </ol>
-<!--
-::: {.callout-important title="Lösung" collapse=true}
-a) $40$
-b) $26$
-c) $34$
-d) $11$
-:::  -->
 <hr>
-<ol start="9" type="1">
-<li>Löse die Gleichungen nach der Variable auf:</li>
+<ol start="2" type="1">
+<li>Vereinfache folgende Wurzeln soweit als möglich:</li>
 </ol>
 <ol type="a">
-<li><span class="math inline">\(3x + 7 = 22\)</span></li>
-<li><span class="math inline">\(5x - 12 = 18\)</span></li>
-<li><span class="math inline">\(7 - 2y = 1\)</span></li>
+<li><span class="math inline">\(\sqrt{a^2}\)</span></li>
+<li><span class="math inline">\(\sqrt{\frac{8a^4 bc^3}{18b^3 c}}\)</span></li>
+<li><span class="math inline">\(\sqrt{x^2 + 16x + 64}\)</span></li>
 </ol>
-<div class="callout callout-style-default callout-important callout-titled" title="Lösung">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Lösung
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-9" class="callout-9-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ol type="a">
-<li><span class="math inline">\(x=5\)</span></li>
-<li><span class="math inline">\(x=6\)</span></li>
-<li><span class="math inline">\(y=3\)</span></li>
-</ol>
-</div>
-</div>
-</div>
 <hr>
-<ol start="10" type="1">
-<li>Berechne und vereinfache die Ausdrücke, falls möglich:</li>
-</ol>
-<ol type="a">
-<li><span class="math display">\[\frac{\frac{3}{4}}{\frac{5}{6}}\]</span></li>
-<li><span class="math display">\[\frac{2/3 + 1/4}{5/6 - 1/2}\]</span></li>
-<li>Finde den ggT von <span class="math inline">\(36\)</span> und <span class="math inline">\(48\)</span> und kürze <span class="math inline">\(\frac{36}{48}\)</span> vollständig.</li>
-<li>Finde das kgV von <span class="math inline">\(8\)</span> und <span class="math inline">\(12\)</span>.</li>
-</ol>
-<div class="callout callout-style-default callout-important callout-titled" title="Lösung">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Lösung
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-10" class="callout-10-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<ol type="a">
-<li><span class="math inline">\(\frac{9}{10}\)</span></li>
-<li><span class="math inline">\(2.75\)</span></li>
-<li>ggT<span class="math inline">\(=12\)</span>, <span class="math inline">\(\frac{36}{48}=\frac{3}{4}\)</span></li>
-<li><span class="math inline">\(24\)</span></li>
-</ol>
-</div>
-</div>
-</div>
+</section>
+<section id="sec-wurzeln_rechnen_gemischt" class="level3" data-number="4.4.3">
+<h3 data-number="4.4.3" class="anchored" data-anchor-id="sec-wurzeln_rechnen_gemischt"><span class="header-section-number">4.4.3</span> Gemischte Aufgaben</h3>
+<p>Rychenberg - Arithmetik und Algebra Kapitel 10.3 (Rechnen mit Quadratwurzeln)</p>
+<p>Seite 94, Aufgaben</p>
+<ul>
+<li>23</li>
+</ul>
+<p>Seite 95, Aufgaben</p>
+<ul>
+<li>25</li>
+<li>27</li>
+<li>29</li>
+<li>31</li>
+</ul>
+</section>
+</section>
+<section id="sec-wurzeln_normalform" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="sec-wurzeln_normalform"><span class="header-section-number">4.5</span> Normalform</h2>
+<p>Rychenberg - Arithmetik und Algebra Kapitel 10.4 (Normalform)</p>
+<p>Seite 95, Aufgaben</p>
+<ul>
+<li>33</li>
+<li>35</li>
+<li>37</li>
+<li>39</li>
+</ul>
+<p>Seite 96, Aufgaben</p>
+<ul>
+<li>41</li>
+<li>43</li>
+<li>45</li>
+<li>47</li>
+<li>49</li>
+<li>51</li>
+<li>53</li>
+<li>55</li>
+</ul>
+<p>Seite 96, Aufgaben</p>
+<ul>
+<li>57</li>
+<li>59</li>
+<li>61</li>
+<li>63</li>
+<li>65</li>
+</ul>
 
 
 </section>
@@ -1114,14 +907,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link" aria-label="Einleitung">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Einleitung</span>
+      <a href="./2_wurzeln.html" class="pagination-link" aria-label="Quadratwurzel">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Quadratwurzel</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./1_polynome.html" class="pagination-link" aria-label="Polynome">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Polynome</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

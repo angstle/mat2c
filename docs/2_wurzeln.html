@@ -1,0 +1,1540 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Dieses Buch umfasst den Unterrichtsstoff für das Jahr 2025/26">
+
+<title>3&nbsp; Quadratwurzel</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./2_1_aufgaben_wurzeln.html" rel="next">
+<link href="./1_1_aufgaben_polynome.html" rel="prev">
+<link href="./favicon.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b53751a350365c71b6c909e95f209ed1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-022c32add0b373e1d671bbeace80d355.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-8636f0b93bb1e90f67bd5734d6d07bdf.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="custom.css">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./2_wurzeln.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Quadratwurzel</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./logo2.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Einleitung</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./0_Taschenrechner.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">TI30x Pro Taschenrechner</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1_polynome.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Polynome</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1_1_aufgaben_polynome.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Übungsaufgaben Polynome</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2_wurzeln.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Quadratwurzel</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2_1_aufgaben_wurzeln.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Übungsaufgaben Wurzeln</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#lernziele" id="toc-lernziele" class="nav-link active" data-scroll-target="#lernziele"><span class="header-section-number">3.1</span> Lernziele</a></li>
+  <li><a href="#definition" id="toc-definition" class="nav-link" data-scroll-target="#definition"><span class="header-section-number">3.2</span> Definition</a>
+  <ul class="collapse">
+  <li><a href="#geometrische-interpretation" id="toc-geometrische-interpretation" class="nav-link" data-scroll-target="#geometrische-interpretation"><span class="header-section-number">3.2.1</span> Geometrische interpretation</a></li>
+  </ul></li>
+  <li><a href="#heron-verfahren" id="toc-heron-verfahren" class="nav-link" data-scroll-target="#heron-verfahren"><span class="header-section-number">3.3</span> Heron-Verfahren</a></li>
+  <li><a href="#reelle-zahlen" id="toc-reelle-zahlen" class="nav-link" data-scroll-target="#reelle-zahlen"><span class="header-section-number">3.4</span> Reelle Zahlen</a>
+  <ul class="collapse">
+  <li><a href="#definition-1" id="toc-definition-1" class="nav-link" data-scroll-target="#definition-1"><span class="header-section-number">3.4.1</span> Definition</a></li>
+  </ul></li>
+  <li><a href="#rechnen-mit-wurzeln" id="toc-rechnen-mit-wurzeln" class="nav-link" data-scroll-target="#rechnen-mit-wurzeln"><span class="header-section-number">3.5</span> Rechnen mit Wurzeln</a>
+  <ul class="collapse">
+  <li><a href="#wurzelgesetze" id="toc-wurzelgesetze" class="nav-link" data-scroll-target="#wurzelgesetze"><span class="header-section-number">3.5.1</span> Wurzelgesetze</a></li>
+  <li><a href="#normalform-der-wurzel" id="toc-normalform-der-wurzel" class="nav-link" data-scroll-target="#normalform-der-wurzel"><span class="header-section-number">3.5.2</span> Normalform der Wurzel</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Quadratwurzel</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><img src="images/2_title.jpg" class="img-fluid"></p>
+<section id="lernziele" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="lernziele"><span class="header-section-number">3.1</span> Lernziele</h2>
+<ul class="task-list">
+<li><label><input type="checkbox"><strong>Die Quadratwurzel</strong></label>
+<ul class="task-list">
+<li><label><input type="checkbox">Ich kann in eigenen Worten erklären, was eine Quadratwurzel ist.</label></li>
+<li><label><input type="checkbox">Ich kann begründen, weshalb man aus negativen Zahlen keine Quadratwurzel ziehen kann.</label></li>
+</ul></li>
+<li><label><input type="checkbox"><strong>Heron-Verfahren</strong></label>
+<ul class="task-list">
+<li><label><input type="checkbox">Ich kann beschreiben, wie man mit dem Heron-Verfahren eine Quadratwurzel näherungsweise berechnet.</label></li>
+<li><label><input type="checkbox">Ich kann das Verfahren Schritt für Schritt auf ein Beispiel anwenden.</label></li>
+<li><label><input type="checkbox">Ich verstehe, wie man die Genauigkeit der Näherung steuern kann.</label></li>
+</ul></li>
+<li><label><input type="checkbox"><strong>Reelle Zahlen</strong></label>
+<ul class="task-list">
+<li><label><input type="checkbox">Ich kenne die verschiedenen Zahlenmengen <span class="math inline">\(\mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{R}\)</span>.</label></li>
+<li><label><input type="checkbox">Ich kann erklären, was rationale und irrationale Zahlen sind.</label></li>
+<li><label><input type="checkbox">Ich verstehe, dass Wurzeln sowohl rationale als auch irrationale Zahlen ergeben können.</label></li>
+</ul></li>
+<li><label><input type="checkbox"><strong>Rechnen mit Wurzeln</strong></label>
+<ul class="task-list">
+<li><label><input type="checkbox">Ich kann die Regeln zum Rechnen mit Wurzeln (Addition, Subtraktion, Multiplikation, Division, Potenzen) anwenden.</label></li>
+<li><label><input type="checkbox">Ich kann Terme mit Wurzeln vereinfachen und in die Normalform bringen.</label></li>
+</ul></li>
+</ul>
+</section>
+<section id="definition" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="definition"><span class="header-section-number">3.2</span> Definition</h2>
+<p>Wir kennen bereits die vier Grundoperationen <em>Addition</em>, <em>Subtraktion</em>, <em>Multiplikation</em> und <em>Division</em> für die Zahlenmengen <span class="math inline">\(\mathbb{N}\)</span>, <span class="math inline">\(\mathbb{Z}\)</span> und <span class="math inline">\(\mathbb{Q}\)</span>.</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="Beispiel Addition">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Beispiel Addition
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Bestimme <span class="math inline">\(x\)</span>:</p>
+<p><span class="math display">\[
+3+x = 10
+\]</span></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="Beispiel Multiplikation">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Beispiel Multiplikation
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Bestimme <span class="math inline">\(x\)</span>:</p>
+<p><span class="math display">\[
+4\cdot x = 12
+\]</span></p>
+</div>
+</div>
+</div>
+<p>Wir möchten nun in selber Art und Weise eine Umkehrung für die Potenz finden. Betrachten wir nun folgende Gleichung:</p>
+<p><span class="math display">\[
+x^2 = 4
+\]</span></p>
+<p>Die Lösung dieser Gleichung definieren wir als die <em>Quadratwurzel</em>.</p>
+<div class="callout callout-style-default callout-caution no-icon callout-titled" title="Definition: Quadratwurzel">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definition: Quadratwurzel
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Die Quadratwurzel (oder kurz: Wurzel) von <span class="math inline">\(a&gt;0\)</span> ist die positive Lösung der Gleichung <span class="math inline">\(x^2 = a\)</span>.</p>
+<p>Wir schreiben <span class="math inline">\(x = \sqrt{a}\)</span> mit <span class="math inline">\(a&gt;0\)</span> ist die positive Lösung der Gleichung <span class="math inline">\(x=a^2\)</span>.</p>
+<p>Der Term unter der Quadratwurzel (in diesem Beispiel <span class="math inline">\(a\)</span>) heisst <em>Radikant</em>.</p>
+</div>
+</div>
+<p><strong>Spezialfälle</strong></p>
+<ul>
+<li><span class="math inline">\(\sqrt{1} = 1\)</span>: weil <span class="math inline">\(1^2 = 1\)</span></li>
+<li><span class="math inline">\(\sqrt{0} = 0\)</span>: weil <span class="math inline">\(0^2 = 0\)</span></li>
+<li><span class="math inline">\(\sqrt{a}\)</span>, mit <span class="math inline">\(a&lt;0\)</span>: Nicht definiert!</li>
+</ul>
+<div class="callout callout-style-default callout-caution no-icon callout-titled" title="Bemerkung">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Bemerkung
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Eine Wurzel ist immer eine positive Zahl.</p>
+<p><span class="math inline">\(\rightarrow\)</span> Wir wissen, sobald eine negative Zahl quadriert wird, ist das Ergebnis positiv.</p>
+</div>
+</div>
+<section id="geometrische-interpretation" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="geometrische-interpretation"><span class="header-section-number">3.2.1</span> Geometrische interpretation</h3>
+<p>Betrachten wir die Definition der Quadratwurzel geometrisch.</p>
+<p>Wir haben ein Rechteck mit den Seitenlängen <span class="math inline">\(28cm\)</span> und <span class="math inline">\(2cm\)</span>. Daraus möchten wir ein flächengleiches Quadrat machen.</p>
+<p>Der Flächeninhalt des Rechtecks ist</p>
+<p><span class="math inline">\(28\cdot 2 = 56 cm^2\)</span></p>
+<p>Welche Seitenlänge müsste ein Quadrat haben, damit seine Fläche auch <span class="math inline">\(56 cm^2\)</span> beträgt? Nennen wir die Seitenlänge <span class="math inline">\(s\)</span>, gilt:</p>
+<p><span class="math inline">\(s\cdot s = s^2 = 56 cm^2\)</span></p>
+<p><span class="math inline">\(s = \sqrt{56}\)</span></p>
+<p>Man kann also die Wurzel einer Zahl <span class="math inline">\(\sqrt{a}\)</span> interpretieren als die Seitenlänge eines Quadrats mit Flächeninhalt <span class="math inline">\(a\)</span>.</p>
+<div class="callout callout-style-default callout-important callout-titled" title="Aufgaben lösen">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Aufgaben lösen
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Löse die Aufgaben zum Thema <a href="2_1_aufgaben_wurzeln.html#sec-wurzeln_intro" class="quarto-xref">Einführung&nbsp;<span>4.1</span></a></p>
+</div>
+</div>
+</section>
+</section>
+<section id="heron-verfahren" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="heron-verfahren"><span class="header-section-number">3.3</span> Heron-Verfahren</h2>
+<p>Die Wurzel einer Quadratzahl ist relativ einfach durch <em>raten</em> zu bestimmen.</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="Beispiel: Wurzel von Quadratzahlen">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Beispiel: Wurzel von Quadratzahlen
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Finde die Wurzel der folgenden Zahlen ohne Taschenrechner:</p>
+<ul>
+<li><span class="math inline">\(49\)</span></li>
+<li><span class="math inline">\(169\)</span></li>
+<li><span class="math inline">\(324\)</span></li>
+<li><span class="math inline">\(529\)</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="Beispiel: Wurzel von Quadratzahlen">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Beispiel: Wurzel von Quadratzahlen
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Finde <span class="math inline">\(\sqrt{150}\)</span> mit dem Taschenrechner, aber ohne die Wurzel-Taste zu verwenden.</p>
+</div>
+</div>
+</div>
+<p>Sobald gilt <span class="math inline">\(\sqrt{a}\)</span> mit <span class="math inline">\(a \in \mathbb{R^+}\)</span> wird die Bestimmung durch raten etwas schwieriger. Und <em>raten</em> ist auch nicht besonders mathematisch (zugegebenermassen, wenn auch zur Not manchmal ganz praktisch).</p>
+<p>Wir lernen nun also ein effizientes, numerisches Verfahren kennen, um die Wurzel aus einer Zahl bestimmen zu können.</p>
+<p>Dazu nutzen wir die Idee, dass die Quadratwurzel einer Zahl <span class="math inline">\(a\)</span> die Seitenlänge des Quadrates mit Flächeninhalt <span class="math inline">\(a\)</span> ist. Wir nähern dieses Quadrat Schritt für Schritt mit Rechtecken an.</p>
+<hr>
+<p><strong>Beispiel</strong> Wir möchten <span class="math inline">\(\sqrt{16}\)</span> mit dem Heron-Verfahren bestimmen. Dazu beginnen wir mit einem Reckteck der Seitenlängen <span class="math inline">\(8\)</span> und <span class="math inline">\(2\)</span>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="2_wurzeln_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Die Seitenlängen haben wir geschickt so gewählt, dass das Ergebnis irgendwo dazwischen liegen muss. Wir können entsprechende Schätzungen für ein Interval vornehmen, wenn das Ergebnis nicht ganz so klar ist. Die Fläche des Rechtecks muss dabei dem Radikanten entsprechen (in unserem Beispiel: <span class="math inline">\(8\cdot 2 = 16\)</span>).</p>
+<p>Als nächster Schritt möchten wir die Lange seite Verkürzen, aber ohne den Flächeninhalt zu verändern. Wir berechnen nun den Mittelwert der Seitenlänge: <span class="math inline">\((8+2) / 2 = 5\)</span>. Das ist eine Seitenlänge unseres nächsten Rechtecks.</p>
+<p>Daraus können wir die zweite Seitenlänge bestimmen. Denn wir wissen, die Fläche muss <span class="math inline">\(16\)</span> ergeben: <span class="math display">\[
+5\cdot x = 16 \rightarrow x=\frac{16}{5}=3.2
+\]</span></p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="2_wurzeln_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Das ist aber noch kein Quadrat. Daher wiederholen wie diese Schritte und verkleinern die längere Seite des Reckteckes, indem wir den Mittelwert beider Seiten berechnen: <span class="math display">\[
+\frac{5 + 3.2}{2} = 4.1
+\]</span></p>
+<p>Daraus bestimmen wir die zweite Seite des Rechteckes: <span class="math display">\[
+16 = 4.1\cdot x \rightarrow x = \frac{16}{4.1} \approx 3.9
+\]</span></p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="2_wurzeln_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Auch das ist noch immer kein Quadrat. Also, nochmals wiederholen: <span class="math display">\[
+\frac{4.1 + 3.9}{2} = 4
+\]</span></p>
+<p>Wir haben nun also unser Quadrat erreicht. Wir haben eine Seite <span class="math inline">\(=4\)</span> und die andere Seite wäre ebenfalls nach dem selben Verfahren: <span class="math inline">\(16=x\cdot4 \rightarrow \frac{16}{4} = 4\)</span>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="2_wurzeln_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Genauigkeit des Ergebnisses">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Genauigkeit des Ergebnisses
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Später in der Physik (Oder ganz speziell im Ingenieurswesen) ist es oftmals nicht das Ziel eine ‘perfekte’ Lösung zu erhalten, sondern eine, die unseren Ansprüchen genügt. Ich muss eine Quadratwurzel i.d.R. nicht auf 200 Stellen genau berechnen. Wir können die Genauigkeit in diesem Verfahren steuern, indem wir entscheiden, dass unsere Lösung genau genug ist und wiederholen die Schritte nicht weiter.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Achtung beim Runden">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Achtung beim Runden
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Ganz genau genommen haben wir mit der Rundung hier etwas ‘geschummelt’: <span class="math inline">\(\frac{16}{4.1} = 3.902439...\approx 3.9\)</span>. Wir haben einfach entschieden, dass <span class="math inline">\(3.9\)</span> genügend genau ist.</p>
+<p>In diesem Fall war es in Ordnung. Es bedarf aber immer grösster Vorsicht, mit gerundeten Werten weiterzurechnen! Die Fehler können sich in langen Rechnungen verschleppen und plötzlich riesig werden.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution no-icon callout-titled" title="Heron-Verfahren: Rezept">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Heron-Verfahren: Rezept
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Wir möchten allgemein die Zahl <span class="math inline">\(x=\sqrt{a}\)</span> bestimmen.</p>
+<ol type="1">
+<li><p>Wähle einen Startwert <span class="math inline">\(x_0\)</span>.</p></li>
+<li><p>Berechne die andere Seite als <span class="math inline">\(y_0=\frac{a}{x_0} \rightarrow\)</span> das Produkt beider Zahlen soll <span class="math inline">\(a\)</span> entsprechen.</p></li>
+<li><p>Wir möchten nun den grösseren Wert verringern und wählen dazu den Mittelwert beider Werte. <span class="math display">\[
+x_1 = \frac{x_0 + y_0}{2} = \frac{x_0 + \frac{a}{x_0}}{2}
+\]</span></p></li>
+<li><p>Der zweite Wert ist wiederum <span class="math display">\[
+y_1 = \frac{a}{x_1}
+\]</span></p></li>
+<li><p>Wir wiederholen die Schritte 3 &amp; 4 für eine immer bessere Annäherung an <span class="math inline">\(\sqrt{a}\)</span></p></li>
+</ol>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="Beispiel Heron-Verfahren">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Beispiel Heron-Verfahren
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Bestimme <span class="math inline">\(\sqrt{77}\)</span> mit dem Heron-Verfahren mit 4 Iterationen.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Aufgaben lösen">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Aufgaben lösen
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Löse die Aufgaben zum Thema <a href="2_1_aufgaben_wurzeln.html#sec-wurzeln_heron" class="quarto-xref">Heron-Verfahren&nbsp;<span>4.2</span></a></p>
+</div>
+</div>
+</section>
+<section id="reelle-zahlen" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="reelle-zahlen"><span class="header-section-number">3.4</span> Reelle Zahlen</h2>
+<p>Wir kennen nun bereits einige Zahlenmengen:</p>
+<ul>
+<li>Die natürlichen Zahlen <span class="math inline">\(\mathbb{N}\)</span>
+<ul>
+<li>Ganze (also ohne Kommastellen), positive Zahlen, ohne <span class="math inline">\(0 \rightarrow\)</span> Bsp.: <span class="math inline">\(1,2,3,4,5,.....\)</span></li>
+</ul></li>
+<li>Die ganzen Zahlen <span class="math inline">\(\mathbb{Z}\)</span>
+<ul>
+<li>Natürliche Zahlen mit negativen Zahlen inklusive <span class="math inline">\(0 \rightarrow\)</span> Bsp.: <span class="math inline">\(...-3, -2, -1, 0, 1, 2, 3,....\)</span></li>
+</ul></li>
+<li>Die rationalen Zahlen <span class="math inline">\(\mathbb{Q}\)</span>
+<ul>
+<li>Zahlen, welche als Bruch dargestellt werden können, wobei sowohl Zähler und Nenner ganze Zahlen sind.</li>
+</ul></li>
+</ul>
+<p>Können Wurzeln <em>Reelle Zahlen</em> <span class="math inline">\((\mathbb{R})\)</span> sein? Eine rationale Zahl <span class="math inline">\(\mathbb{Q}\)</span> lässt sich als Bruch darstellen, eine irrationale Zahl nicht.</p>
+<p>Prüfen wir die Frage mit einem Beispiel:</p>
+<div class="callout callout-style-default callout-caution no-icon callout-titled" title="Ist $\sqrt{2}$ eine rationale Zahl?">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Ist <span class="math inline">\(\sqrt{2}\)</span> eine rationale Zahl?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-13" class="callout-13-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>Kann <span class="math inline">\(\sqrt{2}\)</span> als Bruch dargestellt werden? Wir nehmen an: ja. Dazu treffen wir die Annahme, dass gilt: <span class="math display">\[
+\sqrt{2} = \frac{p}{q}
+\]</span> und, dass der Bruch gekürzt ist.</p>
+<p>Das bedeutet: <span class="math display">\[
+\left(\frac{p}{q}\right)^2 = 2
+\]</span> Bzw. <span class="math display">\[
+p^2 = 2\cdot q^2
+\]</span></p>
+<p>Wir schliessen daraus, dass <span class="math inline">\(p^2\)</span> eine gerade Zahl sein muss, da eine Zahl multipliziert mit <span class="math inline">\(2\)</span> immer gerade ist.</p>
+<p>Wir setzen <span class="math inline">\(p = 2r\)</span> und erhalten somit durch einsetzen in obige Gleichung: <span class="math display">\[
+2q^2 = p^2 = (2r)^2 = 4r^2
+\]</span></p>
+<p>Wir dividieren durch <span class="math inline">\(2\)</span>: <span class="math display">\[
+q^2 = 2r^2
+\]</span></p>
+<p>Da <span class="math inline">\(q^2 = 2r^2\)</span> gilt, folgt, dass auch <span class="math inline">\(q^2\)</span> gerade ist. Damit ist auch <span class="math inline">\(q\)</span> gerade.</p>
+<p>Wir haben nun gezeigt, dass sowohl <span class="math inline">\(p\)</span> als auch <span class="math inline">\(q\)</span> gerade sein müssen. Dies steht jedoch im Widerspruch zur Annahme, dass <span class="math inline">\(\tfrac{p}{q}\)</span> vollständig gekürzt ist.</p>
+<p>Damit ist unsere ursprüngliche Annahme falsch, und <span class="math inline">\(\sqrt{2}\)</span> kann nicht als Bruch dargestellt werden.</p>
+<p>Schlussfolgerung: <span class="math inline">\(\sqrt{2}\)</span> ist keine rationale Zahl <span class="math inline">\(\mathbb{Q}\)</span>, sondern eine irrationale Zahl. Da irrationale Zahlen Teilmenge der reellen Zahlen <span class="math inline">\(\mathbb{R}\)</span> sind, folgt:</p>
+<p><span class="math inline">\(\sqrt{2}\in \mathbb{R}\)</span>, <span class="math inline">\(\sqrt{2}\notin \mathbb{Q}\)</span></p>
+</div>
+</div>
+</div>
+<p>Somit haben wir gezeigt, dass <span class="math inline">\(\sqrt{2}\)</span> nicht als Bruch dargestellt werden kann und somit irrational ist. Irrationale Zahlen besitzen eine <em>unendliche</em>, <em>nicht periodische</em> Dezimaldarstellung, weshalb wir diese nie exakt in Dezimaldarstellung ausschreiben können. <span class="math inline">\(\sqrt{2} \approx 1.414213562373095048\)</span> ist zwar sehr präzise, aber nicht exakt. Besonders wenn man bedenkt, dass <em>unendlich</em> weitere Stellen folgen.</p>
+<section id="definition-1" class="level3" data-number="3.4.1">
+<h3 data-number="3.4.1" class="anchored" data-anchor-id="definition-1"><span class="header-section-number">3.4.1</span> Definition</h3>
+<p>Wir erweitern nun also unseren Zahlenbereich um die reellen Zahlen <span class="math inline">\(\mathbb{R}\)</span>, in welcher zusätzlich Zahlen vorkommen, die nicht als Bruch dargestellt werden können und <em>unendlich</em> viele Nachkommastellen besitzen.</p>
+<div class="callout callout-style-default callout-caution no-icon callout-titled" title="Definition Reelle Zahlen">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definition Reelle Zahlen
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Reellen Zahlen sind alle Zahlen, die wir als Dezimalzahl schreiben können, unabhängig davon, wie viele Nachkommastellen sie hat und ob diese sich periodisch wiederholen.</p>
+</div>
+</div>
+<p>Die reellen Zahlen beinhalten auch die rationalen Zahlen (umgekehrt gilt das nicht). Wir können jeden Bruch als endliche Dezimalzahl, oder Dezimalzahl mit periodischer Folge beschreiben.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="2_wurzeln_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<section id="irrationalität-bei-wurzeln" class="level4" data-number="3.4.1.1">
+<h4 data-number="3.4.1.1" class="anchored" data-anchor-id="irrationalität-bei-wurzeln"><span class="header-section-number">3.4.1.1</span> Irrationalität bei Wurzeln</h4>
+<p>Wie du weisst, sind Wurzeln nicht immer irrational. Wir kennen durchaus Wurzeln, die zu den rationalen oder natürlichen Zahlen gehören.</p>
+<ul>
+<li><span class="math inline">\(\sqrt{a} \in \mathbb{N}\)</span>
+<ul>
+<li><span class="math inline">\(a\)</span> ist eine Quadratzahl</li>
+<li><span class="math inline">\(\sqrt{9}=3\in \mathbb{N}\)</span></li>
+</ul></li>
+<li><span class="math inline">\(\sqrt{a} \in \mathbb{Q}\)</span>
+<ul>
+<li><span class="math inline">\(a\)</span> ist das Quadrat einer rationalen Zahl <span class="math inline">\(\frac{m}{n}\)</span></li>
+<li><span class="math inline">\(\sqrt{\frac{25}{36}}=\frac{5}{6}\in \mathbb{Q}\)</span></li>
+</ul></li>
+<li><span class="math inline">\(\sqrt{a} \in \mathbb{R}\)</span>
+<ul>
+<li><span class="math inline">\(a\)</span> ist <em>kein</em> Quadrat einer rationalen Zahl</li>
+<li><span class="math inline">\(\sqrt{7}\in \mathbb{R}\)</span></li>
+</ul></li>
+</ul>
+<div class="callout callout-style-default callout-important callout-titled" title="Aufgaben lösen">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Aufgaben lösen
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Löse die Aufgaben zum Thema <a href="2_1_aufgaben_wurzeln.html#sec-wurzeln_reell" class="quarto-xref">Reelle-Zahlen&nbsp;<span>4.3</span></a></p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="rechnen-mit-wurzeln" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="rechnen-mit-wurzeln"><span class="header-section-number">3.5</span> Rechnen mit Wurzeln</h2>
+<p>Wir möchten nun die Gesetzmässigkeiten betrachten, wie mit Wurzeln gerechnet werden kann.</p>
+<section id="wurzelgesetze" class="level3" data-number="3.5.1">
+<h3 data-number="3.5.1" class="anchored" data-anchor-id="wurzelgesetze"><span class="header-section-number">3.5.1</span> Wurzelgesetze</h3>
+<section id="addition-und-subtraktion" class="level4" data-number="3.5.1.1">
+<h4 data-number="3.5.1.1" class="anchored" data-anchor-id="addition-und-subtraktion"><span class="header-section-number">3.5.1.1</span> Addition und Subtraktion</h4>
+<p>Ähnlich wie bei den Potenzen ist es nicht möglich, eine Summe oder eine Diﬀerenz die unter der Wurzel steht aufzulösen. Betrachte dazu die folgenden Beispiele.</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="Beispiel Addition und Subtraktion mit Wurzeln">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-16-contents" aria-controls="callout-16" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Beispiel Addition und Subtraktion mit Wurzeln
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-16" class="callout-16-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Beispiel: Berechne jeweils den Wert des Terms links und rechts und vergleiche sie miteinander. Was fällt auf?</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Term links</th>
+<th>Term rechts</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(\sqrt{9+16}\)</span></td>
+<td><span class="math inline">\(\sqrt{9} + \sqrt{16}\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\sqrt{25-9}\)</span></td>
+<td><span class="math inline">\(\sqrt{25} - \sqrt{9}\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\sqrt{5^2 + 12^2}\)</span></td>
+<td><span class="math inline">\(\sqrt{5^2} + \sqrt{12^2}\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\sqrt{17^2 - 8^2}\)</span></td>
+<td><span class="math inline">\(\sqrt{17^2} - \sqrt{8^2}\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution no-icon callout-titled" title="Additions- und Subtraktionsregeln für Wurzeln">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Additions- und Subtraktionsregeln für Wurzeln
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Wir können die Beobachtungen wie folgt zusammenfassen:</p>
+<ul>
+<li><span class="math inline">\(\sqrt{a+b} \neq \sqrt{a}+\sqrt{b}\)</span></li>
+<li><span class="math inline">\(\sqrt{a-b} \neq \sqrt{a} - \sqrt{b}\)</span></li>
+<li><span class="math inline">\(\sqrt{a^2 + b^2} \neq a + b\)</span></li>
+<li><span class="math inline">\(\sqrt{a^2 - b^2} \neq a - b\)</span></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="multiplikation-und-division" class="level4" data-number="3.5.1.2">
+<h4 data-number="3.5.1.2" class="anchored" data-anchor-id="multiplikation-und-division"><span class="header-section-number">3.5.1.2</span> Multiplikation und Division</h4>
+<p>Ähnlich wie bei den Potenzen können wir die Multiplikation und Division zweier Wurzeln als eine einzige Wurzel zusammenfassen. Dies nennen wir die Produkt-, bzw. die Quotientenregel.</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="Beispiel Multiplikation und  Division mit Wurzeln">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-18-contents" aria-controls="callout-18" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Beispiel Multiplikation und Division mit Wurzeln
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-18" class="callout-18-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Beispiel: Berechne jeweils den Wert des Terms links und rechts und vergleiche sie miteinander. Was fällt auf?</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Term links</th>
+<th>Term rechts</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(\sqrt{9\cdot 16}\)</span></td>
+<td><span class="math inline">\(\sqrt{9} \cdot \sqrt{16}\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\sqrt{\frac{36}{9}}\)</span></td>
+<td><span class="math inline">\(\frac{\sqrt{36}}{\sqrt{9}}\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution no-icon callout-titled" title="Multiplikations- und Divisionsregeln für Wurzeln">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Multiplikations- und Divisionsregeln für Wurzeln
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Wir können die Beobachtungen wie folgt zusammenfassen:</p>
+<ul>
+<li><span class="math inline">\(\sqrt{a\cdot b} = \sqrt{a} \cdot \sqrt{b}\)</span></li>
+<li><span class="math inline">\(\sqrt{\frac{a}{b}} = \frac{\sqrt{a}}{\sqrt{b}}\)</span></li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Aufgaben lösen">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Aufgaben lösen
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Löse die Aufgaben zum Thema <a href="2_1_aufgaben_wurzeln.html#sec-wurzeln_rechnen_multi_div" class="quarto-xref">Multiplikation und Division mit Wurzeln&nbsp;<span>4.4.1</span></a></p>
+</div>
+</div>
+</section>
+<section id="potenzen" class="level4" data-number="3.5.1.3">
+<h4 data-number="3.5.1.3" class="anchored" data-anchor-id="potenzen"><span class="header-section-number">3.5.1.3</span> Potenzen</h4>
+<p>Auch hier lassen sich bestimmte Regeln finden.</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="Beispiel Potenzen mit Wurzeln">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-21-contents" aria-controls="callout-21" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Beispiel Potenzen mit Wurzeln
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-21" class="callout-21-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Beispiel: Berechne jeweils den Wert des Terms links und rechts und vergleiche sie miteinander. Was fällt auf?</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Term links</th>
+<th>Term rechts</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(\sqrt{9^2}\)</span></td>
+<td><span class="math inline">\((\sqrt{9})^2\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\sqrt{4^2}\)</span></td>
+<td><span class="math inline">\((\sqrt{4})^4\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\sqrt{2^6}\)</span></td>
+<td><span class="math inline">\(2^3\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution no-icon callout-titled" title="Potenzregeln für Wurzeln">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Potenzregeln für Wurzeln
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Wir können die Beobachtungen wie folgt zusammenfassen:</p>
+<ul>
+<li><span class="math inline">\(\sqrt{a^n} = (\sqrt{a})^n\)</span></li>
+<li><span class="math inline">\(\sqrt{a^n} = |a|^\frac{n}{2}\)</span></li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Aufgaben lösen">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Aufgaben lösen
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Löse die Aufgaben zum Thema <a href="2_1_aufgaben_wurzeln.html#sec-wurzeln_rechnen_potenzen" class="quarto-xref">Potenzen mit Wurzeln&nbsp;<span>4.4.2</span></a></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Aufgaben lösen">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Aufgaben lösen
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Löse die Aufgaben zum Thema <a href="2_1_aufgaben_wurzeln.html#sec-wurzeln_rechnen_gemischt" class="quarto-xref">Gemischte Aufgaben zu Wurzeln&nbsp;<span>4.4.3</span></a></p>
+</div>
+</div>
+</section>
+</section>
+<section id="normalform-der-wurzel" class="level3" data-number="3.5.2">
+<h3 data-number="3.5.2" class="anchored" data-anchor-id="normalform-der-wurzel"><span class="header-section-number">3.5.2</span> Normalform der Wurzel</h3>
+<p>Wie Brüche können auch Wurzeln in unterschiedlicher Formen dargestellt werden und dieselbe Bedeutung haben.</p>
+<p>Die einfachste Darstellung eines Bruches ist die maximal gekürzte Form. Bei den Wurzeln stellt die Vereinfachung die <em>Normalform</em> dar.</p>
+<div class="callout callout-style-default callout-caution no-icon callout-titled" title="Normalform der Wurzel">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Normalform der Wurzel
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Folgendes sind die Eigenschaften dieser Normalform:</p>
+<ul>
+<li>Der Ausdruck ist möglichst vereinfacht</li>
+<li>Es steht keine Wurzel im Nenner</li>
+<li>Alle Wurzeln sind quadratfrei</li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="Beispiel Wurzel-Normalform">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-26-contents" aria-controls="callout-26" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Beispiel Wurzel-Normalform
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-26" class="callout-26-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><span class="math inline">\(5\sqrt{2} + \frac{1}{2}\sqrt{2}\)</span></li>
+<li><span class="math inline">\(\frac{1}{\sqrt{5}}\)</span></li>
+<li><span class="math inline">\(\sqrt{72}\)</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Bemerkung">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Bemerkung
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Ein Term kann auch mehrere verschiedene Wurzeln beinhalten.</p>
+<p>Dann besteht die Normalform aus einer Summe von vereinfachten Wurzeln.</p>
+<p>Zum Beispiel:</p>
+<p><span class="math inline">\(5\sqrt{2} + 2\sqrt{5} + \sqrt{8} - \frac{5}{2}\sqrt{5}\)</span></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Aufgaben lösen">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Aufgaben lösen
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Löse die Aufgaben zum Thema <a href="2_1_aufgaben_wurzeln.html#sec-wurzeln_normalform" class="quarto-xref">Normalform der Wurzel&nbsp;<span>4.5</span></a></p>
+</div>
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./1_1_aufgaben_polynome.html" class="pagination-link" aria-label="Übungsaufgaben Polynome">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Übungsaufgaben Polynome</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./2_1_aufgaben_wurzeln.html" class="pagination-link" aria-label="Übungsaufgaben Wurzeln">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Übungsaufgaben Wurzeln</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
