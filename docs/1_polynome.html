@@ -1225,6 +1225,14 @@ Beispiele: binomische Formeln
 <li><span class="math inline">\((x-2)^2\)</span></li>
 <li><span class="math inline">\((2u+3v)^2\)</span></li>
 </ol>
+<hr>
+<p><strong>Lösungen</strong></p>
+<ol type="a">
+<li><span class="math inline">\(a^2 + 2a + 1\)</span></li>
+<li><span class="math inline">\(d^2 - 25\)</span></li>
+<li><span class="math inline">\(x^2 - 4x + 4\)</span></li>
+<li><span class="math inline">\(4u^2 + 12uv + 9v^2\)</span></li>
+</ol>
 </div>
 </div>
 </div>
@@ -1393,6 +1401,13 @@ Aufgabe: Potenzen von Binomen mit Pascal’schem Dreieck
 <li>Schreibe den Term <span class="math inline">\((a-b)^6\)</span> ohne Klammern</li>
 <li>Schreibe den Term <span class="math inline">\((2u+5)^4\)</span> ohne Klammern</li>
 </ol>
+<hr>
+<p><strong>Lösungen</strong></p>
+<ol type="a">
+<li><span class="math inline">\(a^5 + 5a^4b + 10a^3b^2 + 10a^2b^3 + 5ab^4 + b^5\)</span></li>
+<li><span class="math inline">\(a^6 - 6a^5b + 15a^4b^2 - 20a^3b^3 + 15a^2b^4 - 6ab^5 + b^6\)</span></li>
+<li><span class="math inline">\((2u)^4 + 4(2u)^3 \cdot 5 + 6(2u)^2 \cdot 5^2 + 4(2u)\cdot 5^3 + 5^4\)</span> <span class="math inline">\(= 16u^4 + 160u^3 + 600u^2 + 1000u + 625\)</span></li>
+</ol>
 </div>
 </div>
 </div>
@@ -1409,7 +1424,7 @@ Berechnung von <span class="math inline">\((a+b)^n\)</span> und <span class="mat
 <div class="callout-body-container callout-body">
 <p><span class="math inline">\((a+b)^n\)</span> ist ein Polynom bestehend aus <span class="math inline">\(n+1\)</span> Monomen. Dabei sind die Koeﬃzienten gegeben durch die <span class="math inline">\(n\)</span>-te Zeile des Pascal’schen Dreiecks und die dahinter stehenden Produkte sind die folgenden:</p>
 <p><span class="math display">\[
-a^n, a^{(n−1)}\cdot b^1, a^{(n−2)}\cdot b^2, ... a^2\cdot b^{(n−2)}, a^1\cdot b^{(n−1)}, b^n
+a^n, a^{(n-1)}\cdot b^1, a^{(n−2)}\cdot b^2, ... a^2\cdot b^{(n-2)}, a^1\cdot b^{(n−1)}, b^n
 \]</span></p>
 <p>Im Fall von <span class="math inline">\((a−b)^n\)</span> ist das Vorzeichen der Koeﬃzienten aus dem Pascal’schen Dreieck abwechseln ein Plus und ein Minus, beginnend mit Plus.</p>
 </div>
@@ -1437,6 +1452,26 @@ Aufgabe: Berechnung vom Eingangsbeispiel
 \]</span></p>
 <p>Du dürftest jetzt alle Werkzeuge haben, um den Term ohne Klammern zu schreiben.</p>
 <p>Tip: Du kannst auch zuerst die allgemeine Form für <span class="math inline">\((a+b)^{10}\)</span> berechnen und anschliessend die Aufgabe lösen.</p>
+<hr>
+<p><strong>Lösungen</strong></p>
+<p>Die 10. Zeile des Pascal’schen Dreiecks lautet:</p>
+<p><span class="math display">\[
+1 \quad 10 \quad 45 \quad 120 \quad 210 \quad 252 \quad 210 \quad 120 \quad 45 \quad 10 \quad 1
+\]</span></p>
+<p>Allgemein gilt: <span class="math display">\[
+(a+b)^{10} = a^{10} + 10a^9b + 45a^8b^2 + 120a^7b^3 + 210a^6b^4 + 252a^5b^5 +
+\]</span> <span class="math display">\[
+210a^4b^6 + 120a^3b^7 + 45a^2b^8 + 10ab^9 + b^{10}
+\]</span></p>
+<p>Setze <span class="math inline">\(a = 2x\)</span> und <span class="math inline">\(b = y\)</span>:</p>
+<p><span class="math display">\[
+(2x+y)^{10} = (2x)^{10} + 10(2x)^9y + 45(2x)^8y^2 + \dots + 10(2x)y^9 + y^{10}
+\]</span></p>
+<p>Wir vereinfachen den Term zu: <span class="math display">\[
+(2x+y)^{10} = 1024x^{10} + 5120x^9y + 11520x^8y^2 + 15360x^7y^3 +
+\]</span> <span class="math display">\[
+13440x^6y^4 + 8064x^5y^5 + 3360x^4y^6 + 960x^3y^7 + 180x^2y^8 + 20xy^9 + y^{10}
+\]</span></p>
 </div>
 </div>
 </div>
