@@ -324,7 +324,7 @@
     "href": "3_pythagoras.html#anwendungen-des-satzes-von-pythagoras",
     "title": "3  Pythagoras",
     "section": "3.2 Anwendungen des Satzes von Pythagoras",
-    "text": "3.2 Anwendungen des Satzes von Pythagoras\nDer Satz des Pythagoras hat sehr viele Anwendungen. In der Antike wurde er z.B. benutzt, um rechte Winkel zu konstruieren. Später konnte man ihn verwenden, um Wurzeln aus nicht Quadratzahlen zu bestimmen. Aber auch heute verwendet man ihn (und vor allem die Erweiterung zur Trigonometrie) noch bei der Landvermessung oder auch für simple Berechnungen z.B. der Länge einer Bildschirmdiagonalen, oder Abschätzung der Höhe von Bäumen.\n\n3.2.1 Anwendungen früher bis heute\nSchauen wir uns die Anwendungen mit Hilfe von Beispielen an.\n\n\n\n\n\n\nKonstruktion rechter Winkel\n\n\n\nDie alten ägyptischen Pyramiden sind geometrisch sehr exakt gebaut. So haben sie meist exakt quadratische Grundflächen. Dafür benötigt man neben gleich langen Seiten auch vier rechte Winkel. Eine Möglichkeit, rechte Winkel zu konstruieren, waren Zwölfknotenschnüre. Eine Zwölfknotenschnur ist ein geschlossenes Seil mit 12 Knoten, die jeweils identische Abstände voneinander haben.\nAufgaben:\n\nÜberlege dir, wie mit einer Zwölfknotenschnur ein rechter Winkel entsteht.\nGibt es noch eine andere Anzahl Knoten, mit der es möglich ist auf die gleiche Art einen rechten Winkel zu bestimmen?\n\n\n\n\n\n\n\n\n\nWurzelbestimmung\n\n\n\nHeute können wir Wurzeln mit dem Taschenrechner einfach bestimmen. Wenn wir z.B. den Wert von \\(\\sqrt{2}\\) brauchen, gibt uns der Taschenrechner diesen auf mehrere Nachkommastellen gerundet. Wir möchten uns nun anschauen, wie man diesen Wert geometrisch konstruieren kann.\nUm eine Strecke der Länge \\(\\sqrt{2}\\) zu konstruieren, beginnt man mit einem rechtwinkligen Dreieck, bei dem beide Katheten jeweils Länge \\(1\\) haben \\((a= b= 1)\\).\n\nSkizziere ein solches Dreieck. Wo befindet sich die Strecke mit Länge \\(\\sqrt{2}\\)? Begründe deine Antwort.\nÜberlege dir, wie du mit der gleiche Methode eine Strecke der Länge \\(\\sqrt{5}\\) konstruieren kannst. \n\n\n\n\n\n\n\n\n\nBildschirmdiagonale\n\n\n\nÜblicherweise wird bei einem Bildschirm nur die Länge der Diagonalen in Zoll angegeben \\((1\"=2.54cm)\\). Wirklich vorstellen können wir uns unter dieser Angabe jedoch wenig. Wir möchten nun für ein Beispiel die Bildschirmdiagonale berechnen.\n\nBetrachte den Bildschirm rechts mit angegebener Länge und Breite. Wie viel Zoll ist die Bildschirmdiagonale?\nBei Bildschirmen ist es heutzutage üblich ein Seitenverhältnis von 16:9 zu verwenden. Das heisst die Länger Seite ist \\(\\frac{16}{9}\\) der kürzeren Seite. Berechne die Seitenlängen eines Bildschirms mit einer Bildschirmdiagonalen von \\(55\\) Zoll.\n\n\n\n\n\n\n\n\n\nFörsterdreieck\n\n\n\nFörster können mit einem rechtwinkligen Dreieck relativ schnell und einfach die Höhe eines Baums abschätzen. Der Förster hält dazu ein Gleichschenkliges Dreieck vor sein Auge und platziert sich so weit weg vom Baum, bis er über die Spitze des Dreiecks hinweg nur die oberste Spitze des Baumes sieht.\n\n\nQuelle: https://de.wikipedia.org/w/index.php?curid=4202544\n\nWie hoch ist der Baum, wenn der Förster \\(12m\\) entfernt vom Baum steht und der Förster selbst eine Grösse von 1.90m hat?",
+    "text": "3.2 Anwendungen des Satzes von Pythagoras\nDer Satz des Pythagoras hat sehr viele Anwendungen. In der Antike wurde er z.B. benutzt, um rechte Winkel zu konstruieren. Später konnte man ihn verwenden, um Wurzeln aus nicht Quadratzahlen zu bestimmen. Aber auch heute verwendet man ihn (und vor allem die Erweiterung zur Trigonometrie) noch bei der Landvermessung oder auch für simple Berechnungen z.B. der Länge einer Bildschirmdiagonalen, oder Abschätzung der Höhe von Bäumen.\n\n3.2.1 Anwendungen früher bis heute\nSchauen wir uns die Anwendungen mit Hilfe von Beispielen an.\n\n\n\n\n\n\nKonstruktion rechter Winkel\n\n\n\nDie alten ägyptischen Pyramiden sind geometrisch sehr exakt gebaut. So haben sie meist exakt quadratische Grundflächen. Dafür benötigt man neben gleich langen Seiten auch vier rechte Winkel. Eine Möglichkeit, rechte Winkel zu konstruieren, waren Zwölfknotenschnüre. Eine Zwölfknotenschnur ist ein geschlossenes Seil mit 12 Knoten, die jeweils identische Abstände voneinander haben.\nAufgaben:\n\nÜberlege dir, wie mit einer Zwölfknotenschnur ein rechter Winkel entsteht.\nGibt es noch eine andere Anzahl Knoten, mit der es möglich ist auf die gleiche Art einen rechten Winkel zu bestimmen?\n\n\n\n\n\n\n\n\n\nWurzelbestimmung\n\n\n\nHeute können wir Wurzeln mit dem Taschenrechner einfach bestimmen. Wenn wir z.B. den Wert von \\(\\sqrt{2}\\) brauchen, gibt uns der Taschenrechner diesen auf mehrere Nachkommastellen gerundet. Wir möchten uns nun anschauen, wie man diesen Wert geometrisch konstruieren kann.\nUm eine Strecke der Länge \\(\\sqrt{2}\\) zu konstruieren, beginnt man mit einem rechtwinkligen Dreieck, bei dem beide Katheten jeweils Länge \\(1\\) haben \\((a= b= 1)\\).\n\nSkizziere ein solches Dreieck. Wo befindet sich die Strecke mit Länge \\(\\sqrt{2}\\)? Begründe deine Antwort.\nÜberlege dir, wie du mit der gleiche Methode eine Strecke der Länge \\(\\sqrt{5}\\) konstruieren kannst.\nLöse Aufgaben 23 und 24 im Buch S. 76.\n\n\n\n\n\n\n\n\n\nBildschirmdiagonale\n\n\n\nÜblicherweise wird bei einem Bildschirm nur die Länge der Diagonalen in Zoll angegeben \\((1^{\"}=2.54cm)\\). Wirklich vorstellen können wir uns unter dieser Angabe jedoch wenig. Wir möchten nun für ein Beispiel die Bildschirmdiagonale berechnen.\n\nBetrachte den unternstehenden Bildschirm mit angegebener Länge und Breite. Wie viel Zoll ist die Bildschirmdiagonale?\n\n\n\nBei Bildschirmen ist es heutzutage üblich ein Seitenverhältnis von 16:9 zu verwenden. Das heisst die Länger Seite ist \\(\\frac{16}{9}\\) der kürzeren Seite. Berechne die Seitenlängen eines Bildschirms mit einer Bildschirmdiagonalen von \\(55\\) Zoll.\n\n\n\n\n\n\n\n\n\nFörsterdreieck\n\n\n\nFörster können mit einem rechtwinkligen Dreieck relativ schnell und einfach die Höhe eines Baums abschätzen. Der Förster hält dazu ein Gleichschenkliges Dreieck vor sein Auge und platziert sich so weit weg vom Baum, bis er über die Spitze des Dreiecks hinweg nur die oberste Spitze des Baumes sieht.\n\n\nQuelle: https://de.wikipedia.org/w/index.php?curid=4202544\n\n\nWie hoch ist der Baum, wenn der Förster \\(12m\\) entfernt vom Baum steht und der Förster selbst eine Grösse von 1.90m hat?\nWie gross ist die Distanz vom Förster zur Baumspitze?",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Pythagoras</span>"
     ]
@@ -334,7 +334,67 @@
     "href": "3_pythagoras.html#weitere-anwendungsaufgaben",
     "title": "3  Pythagoras",
     "section": "3.3 Weitere Anwendungsaufgaben",
-    "text": "3.3 Weitere Anwendungsaufgaben\n\n\n\n\n\n\nAufgabe 1\n\n\n\n\nEine Leiter soll zu einem Punkt \\(14m\\) über dem Boden hoch gehen. Wie lang muss die Leiter mindestens sein, wenn ihr Fuss \\(4m\\) von der (senkrechten) Wand entfernt steht?\nEine Doppelleiter ist \\(3.5m\\) lang. Sie soll \\(3m\\) hoch reichen. Wie weit muss man die Füsse auseinander stellen?\nEin Gleitschirmpilot steht auf dem \\(2362m\\) hohen Niesen bei Spiez und blickt ins Tal. Die auf der Karte im Massstab \\(1:25000\\) genau \\(18cm\\) entfernte Landestelle liegt auf einer Höhe von \\(641m\\) über Meer. Welche Strecke legt der Pilot mindestens zurück, wenn er in einer perfekten Gerade zum Landeplatz fliegt? (Runde auf ganze Zahlen)\nGegeben ist ein Würfel mit Seitenlänge \\(8cm\\). Es gibt eine Kugel, welche durch alle \\(8\\) Eckpunkte des Würfels geht. Was hat diese Kugel für einen Radius?\nEin Kirchturmdach hat die Form einer geraden quadratischen Pyramide. Wie hoch ist die Dachkonstruktion, wenn die Traufkanten \\(6m\\) und die Seitenkanten \\(9.5m\\) lang sind? Die Traufkanten sind die horizontal liegenden Kanten am untern Ende der Dachkonstruktion bzw. die Kanten zwischen der schrägen Dachfläche und der senkrechten Wand des Kirchturms.\nMit \\(6\\) Zahnstochern gleicher Länge kann man eine dreiseitige Pyramide darstellen. Drei Zahnstocher bilden die Bodenfläche der Pyramide, die anderen drei Zahnstocher formen die Seitenflächen der Pyramide. Wie hoch wird diese Pyramide, wenn man weiss, dass die Zahnstocher \\(7cm\\) lang sind?",
+    "text": "3.3 Weitere Anwendungsaufgaben\n\n\n\n\n\n\nAufgabe 1\n\n\n\nEine Leiter soll zu einem Punkt \\(14m\\) über dem Boden hoch gehen. Wie lang muss die Leiter mindestens sein, wenn ihr Fuss \\(4m\\) von der (senkrechten) Wand entfernt steht?\n\n\n\n\n\n\n\n\nAufgabe 2\n\n\n\nEine Doppelleiter ist \\(3.5m\\) lang. Sie soll \\(3m\\) hoch reichen. Wie weit muss man die Füsse auseinander stellen?\n\n\n\n\n\n\n\n\nAufgabe 3\n\n\n\nEin Gleitschirmpilot steht auf dem \\(2362m\\) hohen Niesen bei Spiez und blickt ins Tal. Die auf der Karte im Massstab \\(1:25000\\) genau \\(18cm\\) entfernte Landestelle liegt auf einer Höhe von \\(641m\\) über Meer. Welche Strecke legt der Pilot mindestens zurück, wenn er in einer perfekten Gerade zum Landeplatz fliegt? (Runde auf ganze Zahlen)\n\n\n\n\n\n\n\n\n\nLösungen\n\n\n\n\n\nAufgabe 1\nDie Leiter soll 14 m hoch reichen, der Fuß steht 4 m von der Wand entfernt.\nDie Leiterlänge ist die Hypotenuse eines rechtwinkligen Dreiecks:\n\\[\nL = \\sqrt{14^2 + 4^2}\n  = \\sqrt{196 + 16}\n  = \\sqrt{212}\n  \\approx 14.56\\ \\text{m}.\n\\]\nDie Leiter muss mindestens 14.56 m lang sein.\n\nAufgabe 2\nDie Doppelleiter ist 3.5 m lang und soll 3 m hoch reichen.\nJeder Leiterteil ist die Hypotenuse eines rechtwinkligen Dreiecks:\n\\[\nx = \\sqrt{3.5^2 - 3^2}\n   = \\sqrt{12.25 - 9}\n   = \\sqrt{3.25}\n   \\approx 1.80\\ \\text{m}.\n\\]\nGesamtbreite:\n\\[\n2x \\approx 3.61\\ \\text{m}.\n\\]\nDie Füße müssen ca. 3.61 m auseinander stehen.\n\nAufgabe 3\nHöhenunterschied:\n\\[\n\\Delta h = 2362\\,\\text{m} - 641\\,\\text{m} = 1721\\,\\text{m}.\n\\]\nHorizontale Strecke (Maßstab 1 : 25000):\n\\[\n18\\text{ cm} \\cdot 25000 = 450000\\text{ cm} = 4500\\text{ m}.\n\\]\nFlugstrecke:\n\\[\ns = \\sqrt{4500^2 + 1721^2}\n  \\approx 4818\\text{ m}.\n\\]\nDer Pilot fliegt mindestens 4818 m.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Pythagoras</span>"
+    ]
+  },
+  {
+    "objectID": "3_pythagoras.html#aufgabe-1-leiter",
+    "href": "3_pythagoras.html#aufgabe-1-leiter",
+    "title": "3  Pythagoras",
+    "section": "3.4 Aufgabe 1 – Leiter",
+    "text": "3.4 Aufgabe 1 – Leiter\nDie Leiter soll 14 m hoch reichen, der Fuß steht 4 m von der Wand entfernt.\nDie Leiterlänge ist die Hypotenuse eines rechtwinkligen Dreiecks:\n[ L = = =  . ]\nAntwort: Die Leiter muss mindestens 14.56 m lang sein.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Pythagoras</span>"
+    ]
+  },
+  {
+    "objectID": "3_pythagoras.html#aufgabe-2-doppelleiter",
+    "href": "3_pythagoras.html#aufgabe-2-doppelleiter",
+    "title": "3  Pythagoras",
+    "section": "3.5 Aufgabe 2 – Doppelleiter",
+    "text": "3.5 Aufgabe 2 – Doppelleiter\nDie Doppelleiter ist 3.5 m lang und soll 3 m hoch reichen.\nJeder Leiterteil ist die Hypotenuse eines rechtwinkligen Dreiecks:\n[ x = = =  . ]\nGesamtbreite:\n[ 2x  . ]\nAntwort: Die Füße müssen ca. 3.61 m auseinander stehen.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Pythagoras</span>"
+    ]
+  },
+  {
+    "objectID": "3_pythagoras.html#aufgabe-3-gleitschirmpilot",
+    "href": "3_pythagoras.html#aufgabe-3-gleitschirmpilot",
+    "title": "3  Pythagoras",
+    "section": "3.6 Aufgabe 3 – Gleitschirmpilot",
+    "text": "3.6 Aufgabe 3 – Gleitschirmpilot\nHöhenunterschied:\n[ h = 2362, - 641, = 1721,. ]\nHorizontale Strecke (Maßstab 1 : 25000):\n[ 18 = 450000 = 4500. ]\nFlugstrecke:\n[ s = . ]\nAntwort: Der Pilot fliegt mindestens ca. 4818 m.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Pythagoras</span>"
+    ]
+  },
+  {
+    "objectID": "3_pythagoras.html#aufgabe-4-kugel-durch-alle-würfelecken",
+    "href": "3_pythagoras.html#aufgabe-4-kugel-durch-alle-würfelecken",
+    "title": "3  Pythagoras",
+    "section": "3.4 Aufgabe 4 – Kugel durch alle Würfelecken",
+    "text": "3.4 Aufgabe 4 – Kugel durch alle Würfelecken\nWürfel mit Kantenlänge (a = 8).\nRadius ist die halbe Raumdiagonale:\n\\[\nr = \\frac{a\\sqrt{3}}{2}\n  = 4\\sqrt{3}\n  \\approx 6.93\\text{ cm}.\n\\]\nDer Kugelradius beträgt 4 √3 cm ≈ 6.93 cm.\n\nAufgabe 5\nTraufkante: 6 m\nSeitenkante: 9.5 m\nHalbe Diagonale der Grundfläche:\n\\[\nd = 3\\sqrt{2}.\n\\]\nPyramidenhöhe:\n\\[\nh = \\sqrt{9.5^2 - (3\\sqrt{2})^2}\n  = \\sqrt{90.25 - 18}\n  = \\sqrt{72.25}\n  = 8.5\\text{ m}.\n\\]\nDie Dachhöhe beträgt 8.5 m.\n\nAufgabe 6\nAlle 6 Kanten haben die Länge (a = 7).\nHöhe eines regelmäßigen Tetraeders:\n\\[\nh = a\\sqrt{\\frac{2}{3}}\n  = 7\\sqrt{\\frac{2}{3}}\n  \\approx 5.72\\text{ cm}.\n\\]\nDie Pyramide ist ca. 5.72 cm hoch.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Pythagoras</span>"
+    ]
+  },
+  {
+    "objectID": "3_pythagoras.html#aufgabe-5-kirchturmdach-quadratische-pyramide",
+    "href": "3_pythagoras.html#aufgabe-5-kirchturmdach-quadratische-pyramide",
+    "title": "3  Pythagoras",
+    "section": "3.8 Aufgabe 5 – Kirchturmdach (quadratische Pyramide)",
+    "text": "3.8 Aufgabe 5 – Kirchturmdach (quadratische Pyramide)\nTraufkante: 6 m\nSeitenkante: 9.5 m\nHalbe Diagonale der Grundfläche:\n[ d = 3. ]\nPyramidenhöhe:\n[ h = = = = 8.5. ]\nAntwort: Die Dachhöhe beträgt 8.5 m.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Pythagoras</span>"
+    ]
+  },
+  {
+    "objectID": "3_pythagoras.html#aufgabe-6-pyramide-aus-zahnstochern-tetraeder",
+    "href": "3_pythagoras.html#aufgabe-6-pyramide-aus-zahnstochern-tetraeder",
+    "title": "3  Pythagoras",
+    "section": "3.9 Aufgabe 6 – Pyramide aus Zahnstochern (Tetraeder)",
+    "text": "3.9 Aufgabe 6 – Pyramide aus Zahnstochern (Tetraeder)\nAlle 6 Kanten haben die Länge (a = 7).\nHöhe eines regelmäßigen Tetraeders:\n[ h = a = 7 . ]\nAntwort: Die Pyramide ist ca. 5.72 cm hoch.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Pythagoras</span>"
     ]
